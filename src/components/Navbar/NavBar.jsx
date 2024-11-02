@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
     const links = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/listedBooks">Listed Books</NavLink></li>
-        <li><a>Pages to Read</a></li>
+        <li className="mr-2"><NavLink to="/">Home</NavLink></li>
+        <li className="mr-2"><NavLink to="/listedBooks">Listed Books</NavLink></li>
+        <li className="mr-2"><a>Pages to Read</a></li>
 
         
     </>
@@ -45,8 +45,9 @@ const NavBar = () => {
                         }
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
+                <div className="navbar-end gap-2">
+                    <a className="btn bg-green-400 text-white">Sign in</a>
+                    <a className="btn bg-green-400 text-white">Sign up</a>
                 </div>
             </div>
         </div>
